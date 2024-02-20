@@ -1,0 +1,105 @@
+body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.clock {
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
+
+img {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.loot-times {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#time-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px; 
+    background: red;
+} 
+
+.button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    overflow: hidden;
+    z-index: 1;
+}
+  .button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  .button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #008fb3;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  .button:hover {
+    color: #fff;
+  }
+  .button:hover:before {
+    width: 100%;
+  }
+  
+  * {
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+
+  
