@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Builders Potion Timer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <a href="../index.html" class="button">Back</a>
+    <div class="container">
+        <h1>Builders Potion Timer</h1>
+        <div class="input-group">
+            <label for="hours">Hours:</label>
+            <input type="number" id="hours" min="0" value="0">
+            
+            <label for="minutes">Minutes:</label>
+            <input type="number" id="minutes" min="0" max="59" value="0">
+        </div>
+        <button id="calculate">Calculate Boosted Time</button>
+        <div id="result"></div>
+        <button id="startTimer" style="display: none;">Start Timer</button>
+        
+        <div class="active-timers-section">
+            <h2>Active Timers</h2>
+            <div id="active-timers"></div>
+        </div>
+
+        <audio id="timerSound" src="beep.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
